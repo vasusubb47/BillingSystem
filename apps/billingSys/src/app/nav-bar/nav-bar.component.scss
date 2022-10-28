@@ -1,0 +1,32 @@
+
+ul {
+  display: block;
+  margin-top: 0;
+  background-color: aqua;
+  list-style: none;
+}
+
+.navList > li {
+  display: inline-block;
+  margin: .5rem;
+}
+
+a {
+  margin: auto;
+  text-decoration: none;
+  color: #000;
+  background-color: chocolate;
+  border-radius: .5rem;
+  font-size: 1.3rem;
+}
+
+a:hover {
+  font-size: 1.5rem;
+  transition: font-size 200ms ease-in-out;
+}
+
+.selected {
+  transition: all 200ms ease-in-out;
+  font-size: 1.5rem;
+  box-shadow: 1px 1px 1px;
+}

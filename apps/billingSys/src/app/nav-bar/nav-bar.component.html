@@ -1,0 +1,13 @@
+
+<div class="navBar">
+  <ul class="navList">
+    <li *ngFor="let nav of navList">
+      <a 
+        routerLink="{{nav.navLink}}" 
+        id="{{nav.nav}}"
+        class="{{nav.selected? 'selected' : ''}}"
+        (click)="navSelect(nav.nav)"
+      >{{nav.nav}}</a>
+    </li>
+  </ul>
+</div>
