@@ -1,0 +1,23 @@
+.body {
+  background-color: burlywood;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: .6rem;
+}
+
+.router {}
+
+.nav {
+  grid-column: 1/13;
+  grid-row: 1;
+}
+
+.side {
+  grid-column: 1/2;
+  grid-row: 2;
+}
+
+.main {
+  grid-column: 2/13;
+  grid-row: 2;
+}
