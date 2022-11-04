@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'billingSys';
+  
+  selected : string = 'Home';
+  isSettingOn = false;
+
+  showSettings ($msg: boolean) {
+    this.isSettingOn = $msg;
+  };
+
 }

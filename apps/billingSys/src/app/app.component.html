@@ -1,8 +1,14 @@
 
 <div class="body">
   <app-nav-bar class="nav"></app-nav-bar>
-  <app-side-bar class="side"></app-side-bar>
+  <app-side-bar 
+    class="side"
+    (isSettingOn)="this.showSettings($event)"
+  ></app-side-bar>
   <div class="main">
     <router-outlet class="router"></router-outlet>
+  </div>
+  <div class="floating-content {{this.isSettingOn ? '' : 'hide-floating' }}">
+    <app-settings-window class=""></app-settings-window>
   </div>
 </div>

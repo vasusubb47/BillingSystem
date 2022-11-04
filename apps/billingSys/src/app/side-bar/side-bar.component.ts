@@ -1,4 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { 
+  Component, 
+  EventEmitter, 
+  OnInit, 
+  Output 
+} from '@angular/core';
 
 @Component({
   selector: 'app-side-bar',
@@ -7,9 +12,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideBarComponent implements OnInit {
 
-  constructor() { }
+  @Output() isSettingOn = new EventEmitter<boolean>();
+  settingOn = false;
 
+  constructor() {
+  }
+  
   ngOnInit(): void {
+    console.log('SideBarComponent');
+  }
+
+  onSetting () {
+    this.settingOn = !this.settingOn;
+    this.isSettingOn.emit(this.settingOn);
   }
 
 }

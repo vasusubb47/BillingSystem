@@ -5,3 +5,13 @@ body {
   width: 95%;
   background-color: magenta;
 }
+
+.floating-content {
+  z-index: 10;
+  position: absolute;
+  background-color: white;
+}
+
+.hide-floating {
+  display: none;
+}

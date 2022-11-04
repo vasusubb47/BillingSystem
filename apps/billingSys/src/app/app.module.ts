@@ -9,6 +9,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { SettingsComponent } from './side-bar/settings/settings.component';
+import { SettingsWindowComponent } from './settings-window/settings-window.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SettingsComponent } from './side-bar/settings/settings.component';
     LoginPageComponent,
     HomePageComponent,
     SideBarComponent,
-    SettingsComponent
+    SettingsComponent,
+    SettingsWindowComponent
   ],
   imports: [
     BrowserModule,
